@@ -308,6 +308,7 @@ export class PhantomStablePool implements PoolBase {
             ).dp(poolPairData.decimalsOut, 1);
         } catch (err) {
             console.error(`PhantomStable _evmoutGivenIn: ${err.message}`);
+            console.error(err);
             return ZERO;
         }
     }
